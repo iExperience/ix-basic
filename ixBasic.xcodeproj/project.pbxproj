@@ -13,6 +13,7 @@
 		B8522AC51EE7D74E00D448AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8522AC31EE7D74E00D448AE /* LaunchScreen.storyboard */; };
 		B8522ACD1EE7D8AF00D448AE /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522ACC1EE7D8AF00D448AE /* ActivityTableViewController.swift */; };
 		B8522ACF1EE7D8D900D448AE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522ACE1EE7D8D900D448AE /* Activity.swift */; };
+		B8522AD11EE7E02A00D448AE /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B8522AC61EE7D74E00D448AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8522ACC1EE7D8AF00D448AE /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		B8522ACE1EE7D8D900D448AE /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B8522AC61EE7D74E00D448AE /* Info.plist */,
 				B8522ACC1EE7D8AF00D448AE /* ActivityTableViewController.swift */,
 				B8522ACE1EE7D8D900D448AE /* Activity.swift */,
+				B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */,
 			);
 			path = ixBasic;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8522AD11EE7E02A00D448AE /* ActivityDetailViewController.swift in Sources */,
 				B8522ACF1EE7D8D900D448AE /* Activity.swift in Sources */,
 				B8522ACD1EE7D8AF00D448AE /* ActivityTableViewController.swift in Sources */,
 				B8522ABB1EE7D74E00D448AE /* AppDelegate.swift in Sources */,
