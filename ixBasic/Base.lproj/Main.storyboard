@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PfV-nV-T0H" kind="show" id="095-tD-fDL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -53,6 +56,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-jJ-GqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="240.62968515742131"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="Wd7-q3-0WK">
+            <objects>
+                <viewController id="PfV-nV-T0H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6hi-zs-jkm"/>
+                        <viewControllerLayoutGuide type="bottom" id="zO6-l6-Wii"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hO4-73-o6u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="2gI-8m-9Sc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WP2-cf-hcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5dS-QN-mfU">
