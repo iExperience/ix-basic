@@ -51,11 +51,39 @@
                             <outlet property="delegate" destination="vm1-cS-7Gw" id="Y1M-Jw-b7B"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Activities" id="Aap-G8-XfY"/>
+                    <navigationItem key="navigationItem" title="Activities" id="Aap-G8-XfY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BeA-54-wTf">
+                            <connections>
+                                <segue destination="nkL-4t-w09" kind="presentation" id="kDk-g0-SH9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-jJ-GqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="240.62968515742131"/>
+        </scene>
+        <!--Add Activity-->
+        <scene sceneID="bGf-et-Wdq">
+            <objects>
+                <viewController id="37d-i6-RDw" customClass="AddActivityViewController" customModule="ixBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JOg-Ti-nOQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RPp-Oe-YEe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="62p-Nj-cjD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Activity" id="yi9-gJ-BKJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QtJ-do-3QG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Onc-If-DUe"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuw-Zg-rLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="-585.32608695652175"/>
         </scene>
         <!--Details-->
         <scene sceneID="Wd7-q3-0WK">
@@ -117,6 +145,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSc-da-vkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-87.200000000000003" y="240.62968515742131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Fb-ec-j8L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkL-4t-w09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4K0-1l-wuL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="37d-i6-RDw" kind="relationship" relationship="rootViewController" id="wtS-wX-I6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cY7-b4-gyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="-585.32608695652175"/>
         </scene>
     </scenes>
 </document>
