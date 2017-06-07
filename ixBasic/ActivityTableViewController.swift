@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityTableViewController: UITableViewController {
+class ActivityTableViewController: UITableViewController, AddActivityDelegate {
 
     var activities: [Activity] = []
     
@@ -52,6 +52,26 @@ class ActivityTableViewController: UITableViewController {
 
         return cell
     }
+    
+    /*
+    func activityWasSaved(activity: Activity) {
+        print("Activity was saved: \(activity)")
+        activities.append(activity)
+        self.tableView.reloadData()
+    }
+    */
+    func didSaveActivity(activity: Activity) {
+        activities.append(activity)
+        self.tableView.reloadData()
+    }
+    
+    func willSaveActivity() {
+        // Ok we will be prepared...
+    }
+    
+    func didCancel() {
+        // Ok we understand...
+    }
 
     // MARK: - Navigation
 
@@ -64,6 +84,15 @@ class ActivityTableViewController: UITableViewController {
             let indexPath = self.tableView.indexPath(for: cell)
             
             activityDetailViewController.activity = activities[(indexPath?.row)!]
+        }
+        
+        if segue.identifier == "navToAddActivity" {
+            let navigationViewController = segue.destination as! UINavigationController
+            
+            let addActivityViewController = navigationViewController.topViewController as! AddActivityViewController
+            
+            //addActivityViewController.activityTableViewController = self
+            addActivityViewController.delegate = self
         }
         
     }

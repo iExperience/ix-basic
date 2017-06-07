@@ -10,6 +10,11 @@ import UIKit
 
 class AddActivityViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    var delegate: AddActivityDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +26,40 @@ class AddActivityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func save(_ sender: Any) {
+        
+        // Validate 
+        if (nameTextField.text?.isEmpty)! {
+            // Throw an error
+            let defaultAction = UIAlertAction(title: "Close", style: .default, handler: nil)
+            
+            let alertController = UIAlertController(title: "Error", message: "Please enter some text", preferredStyle: .alert)
+            
+            //now we are adding the default action to our alertcontroller
+            alertController.addAction(defaultAction)
+            
+            //and finally presenting our alert using this method
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            
+            // Save activity to a database or server...
+            // Still to come!
+            
+            delegate?.willSaveActivity()
+            
+            let newActivity = Activity(name: nameTextField.text, description: descriptionTextView.text)
+            
+            //activityTableViewController?.activityWasSaved(activity: newActivity!)
+            
+            delegate?.didSaveActivity(activity: newActivity!)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-    */
+
+    @IBAction func cancel(_ sender: Any) {
+        delegate?.didCancel()
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

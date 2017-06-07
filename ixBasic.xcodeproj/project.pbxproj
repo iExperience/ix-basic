@@ -15,6 +15,7 @@
 		B8522ACF1EE7D8D900D448AE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522ACE1EE7D8D900D448AE /* Activity.swift */; };
 		B8522AD11EE7E02A00D448AE /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */; };
 		B8522AD31EE7EA8E00D448AE /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522AD21EE7EA8E00D448AE /* AddActivityViewController.swift */; };
+		B8522AD51EE7F32A00D448AE /* AddActivityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8522AD41EE7F32A00D448AE /* AddActivityDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B8522ACE1EE7D8D900D448AE /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 		B8522AD21EE7EA8E00D448AE /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		B8522AD41EE7F32A00D448AE /* AddActivityDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B8522ACE1EE7D8D900D448AE /* Activity.swift */,
 				B8522AD01EE7E02A00D448AE /* ActivityDetailViewController.swift */,
 				B8522AD21EE7EA8E00D448AE /* AddActivityViewController.swift */,
+				B8522AD41EE7F32A00D448AE /* AddActivityDelegate.swift */,
 			);
 			path = ixBasic;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8522AD11EE7E02A00D448AE /* ActivityDetailViewController.swift in Sources */,
+				B8522AD51EE7F32A00D448AE /* AddActivityDelegate.swift in Sources */,
 				B8522ACF1EE7D8D900D448AE /* Activity.swift in Sources */,
 				B8522ACD1EE7D8AF00D448AE /* ActivityTableViewController.swift in Sources */,
 				B8522AD31EE7EA8E00D448AE /* AddActivityViewController.swift in Sources */,
